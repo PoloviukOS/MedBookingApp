@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <bindings scd="x-schema::tns" xmlns:tns="http://com.project.soap">
+    <schemaBindings map="false">
+      <package name="soap.project.com"/>
+    </schemaBindings>
+    <bindings scd="tns:CreateScheduleRequest">
+      <class ref="soap.project.com.CreateScheduleRequest"/>
+    </bindings>
+    <bindings scd="tns:CreateScheduleResponse">
+      <class ref="soap.project.com.CreateScheduleResponse"/>
+    </bindings>
+    <bindings scd="~tns:ticketStatus">
+      <class ref="soap.project.com.TicketStatus"/>
+    </bindings>
+    <bindings scd="~tns:Ticket">
+      <class ref="soap.project.com.Ticket"/>
+    </bindings>
+  </bindings>
+</bindings>
